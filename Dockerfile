@@ -1,8 +1,8 @@
 FROM busybox:glibc
 MAINTAINER it-operations@boerse-go.de
 ENV TOOL=vault \
-    VERSION=0.5.1 \
-    SHA256=7319b6514cb5ca735d9886d7b7e1ed8730ee38b238bb1626564436b824206d12
+    VERSION=0.5.2 \
+    SHA256=7517b21d2c709e661914fbae1f6bf3622d9347b0fe9fc3334d78a01d1e1b4ec2
 
 # By using ADD there is no need to install wget or curl
 ADD https://releases.hashicorp.com/${TOOL}/${VERSION}/${TOOL}_${VERSION}_linux_amd64.zip ${TOOL}_${VERSION}_linux_amd64.zip
